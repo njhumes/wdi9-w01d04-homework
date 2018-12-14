@@ -34,10 +34,11 @@ checkPalindrome('radar');
 // Need help still
  function sumDigits(nums) {
     let sum = 0;
-    for (let i = 0; i < nums.length; i++) {
-        sum += nums[i];
+    let numStr = nums.toString().split('');
+    for (let i = 0; i < numStr.length; i++) {
+    sum += parseInt(numStr[i]);
     }
-    return sum
+    return sum;
 }
 console.log(sumDigits(342));
 
