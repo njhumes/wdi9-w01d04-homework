@@ -26,3 +26,29 @@ checkPalindrome('racecar');
 checkPalindrome('RaceCar')
 checkPalindrome('radar');
 
+
+ function sumDigits(nums) {
+    let sum = 0;
+    for (let i = 0; i < nums.length; i++) {
+        sum += nums[i];
+    }
+    return sum
+}
+console.log(sumDigits(342));
+
+const calculateSide= (a, b) => {
+    let c = '';
+    let a2 = a **= 2;
+    let b2 = b **= 2
+    console.log('Side C is equal to ' + (a2 + b2));
+}
+calculateSide(3, 2);
+
+function sumArray(numArray) {
+    let sum2 = 0;
+    for (let i = 0; i < numArray.length; i++) {
+    sum2 += numArray[i]
+    }
+     return sum2;
+}
+console.log(sumArray([2, 4, 10, 3]));
