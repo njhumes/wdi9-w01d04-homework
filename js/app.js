@@ -52,3 +52,39 @@ function sumArray(numArray) {
      return sum2;
 }
 console.log(sumArray([2, 4, 10, 3]));
+
+
+const checkPrime = (numP) => {
+    if(numP % 2 === 0){
+        return false;
+    } 
+    else if (Math.sqrt((numP % 1) !== 0)){
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+console.log(checkPrime(3));
+console.log(checkPrime(4));
+console.log(checkPrime(8));
+console.log(checkPrime(9));
+console.log(checkPrime(3.5));
+console.log(checkPrime(7));
+console.log(checkPrime(11));
+
+function printPrimes(isNumPrime) {
+    for(let i = 0; i < isNumPrime; i++)
+    if(checkPrime(i) === true) {
+        console.log(i);
+    }
+}
+printPrimes(50);
+
+
+
+
+
+
+
