@@ -3,8 +3,10 @@
 //   Arguements are what take place of the parameters when you input them inside the functions ()
 //2. return performs the action w/n the background, but won't display the result anywhere. C
 //   console.log writes out the information w/n the websites' console
+//3. we can use return to continuously add a sum of something since return changes that variable each time the loop would run
 
 
+// 2. Palindrome again
 function checkPalindrome(str) {
     str = str.toUpperCase();
     const newArr = [];
@@ -27,6 +29,9 @@ checkPalindrome('RaceCar')
 checkPalindrome('radar');
 
 
+
+// 3. Digit Sum
+// Need help still
  function sumDigits(nums) {
     let sum = 0;
     for (let i = 0; i < nums.length; i++) {
@@ -36,6 +41,9 @@ checkPalindrome('radar');
 }
 console.log(sumDigits(342));
 
+
+
+// 4. Pythagoras
 const calculateSide= (a, b) => {
     let c = '';
     let a2 = a **= 2;
@@ -44,6 +52,9 @@ const calculateSide= (a, b) => {
 }
 calculateSide(3, 2);
 
+
+
+// 5. Sum Array
 function sumArray(numArray) {
     let sum2 = 0;
     for (let i = 0; i < numArray.length; i++) {
@@ -54,6 +65,8 @@ function sumArray(numArray) {
 console.log(sumArray([2, 4, 10, 3]));
 
 
+
+// Prime Numbers
 // My first attempt at checkPrime
 // const checkPrime = (numP) => {
 //     if(numP % 2 === 0){
@@ -66,7 +79,6 @@ console.log(sumArray([2, 4, 10, 3]));
 //         return true;
 //     }
 // }
-
 function checkPrime(num) {
     const sqrt = Math.sqrt(num);
     for (let i = 2; i <= sqrt; i++) {
@@ -76,7 +88,6 @@ function checkPrime(num) {
     }
     return true;
 }
-
 console.log(checkPrime(3));
 console.log(checkPrime(4));
 console.log(checkPrime(8));
