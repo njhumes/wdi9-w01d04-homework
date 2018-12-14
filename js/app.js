@@ -54,28 +54,39 @@ function sumArray(numArray) {
 console.log(sumArray([2, 4, 10, 3]));
 
 
-const checkPrime = (numP) => {
-    if(numP % 2 === 0){
-        return false;
-    } 
-    else if (Math.sqrt((numP % 1) !== 0)){
-        return false;
+// My first attempt at checkPrime
+// const checkPrime = (numP) => {
+//     if(numP % 2 === 0){
+//         return false;
+//     } 
+//     else if (Math.sqrt((numP % 1) !== 0)){
+//         return false;
+//     }
+//     else {
+//         return true;
+//     }
+// }
+
+function checkPrime(num) {
+    const sqrt = Math.sqrt(num);
+    for (let i = 2; i <= sqrt; i++) {
+        if (num % i === 0) {
+            return false;
+        }
     }
-    else {
-        return true;
-    }
+    return true;
 }
 
 console.log(checkPrime(3));
 console.log(checkPrime(4));
 console.log(checkPrime(8));
 console.log(checkPrime(9));
-console.log(checkPrime(3.5));
+console.log(checkPrime(12));
 console.log(checkPrime(7));
 console.log(checkPrime(11));
 
 function printPrimes(isNumPrime) {
-    for(let i = 0; i < isNumPrime; i++)
+    for(let i = 2; i < isNumPrime; i++)
     if(checkPrime(i) === true) {
         console.log(i);
     }
